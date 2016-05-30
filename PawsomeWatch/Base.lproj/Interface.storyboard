@@ -46,10 +46,18 @@
                     <notificationCategory key="notificationCategory" identifier="Pawsome" id="dPK-zJ-eMf"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="Fg2-aj-50Q" id="eRM-21-JeC"/>
+                        <segue destination="srT-md-OMK" kind="relationship" relationship="dynamicNotificationInterface" id="wey-Al-vD6"/>
                     </connections>
                 </notificationController>
             </objects>
             <point key="canvasLocation" x="517" y="344"/>
+        </scene>
+        <!--Dynamic Notification Interface Controller-->
+        <scene sceneID="Yca-AC-NwS">
+            <objects>
+                <controller id="srT-md-OMK"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="344"/>
         </scene>
     </scenes>
 </document>
