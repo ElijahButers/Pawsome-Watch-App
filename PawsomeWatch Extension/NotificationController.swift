@@ -40,6 +40,23 @@ class NotificationController: WKUserNotificationInterfaceController {
     completionHandler(.Custom)
   }
   
+  override func didReceiveLocalNotification(localNotification: UILocalNotification, withCompletion completionHandler: (WKUserNotificationInterfaceType) -> Void) {
+    
+    if let alertBody = localNotification.alertBody {
+      let userInfo: [NSObject : AnyObject] = [
+        "aps" : [
+          "alert": [
+            "body": alertBody
+          ],
+          "category": "Pawsome"
+        ]
+      ]
+      updateDisplayWithNotificationUserInfo(userInfo)
+    }
+    completionHandler(.Custom)
+  }
+
+  
   func randomInt(min: Int, max: Int) -> Int {
     return min + Int(arc4random_uniform(UInt32(max - min + 1)))
   }
