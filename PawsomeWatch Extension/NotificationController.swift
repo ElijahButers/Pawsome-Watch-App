@@ -32,6 +32,10 @@ class NotificationController: WKUserNotificationInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+  
+  func randomInt(min: Int, max: Int) -> Int {
+    return min + Int(arc4random_uniform(UInt32(max - min + 1)))
+  }
 
     /*
     override func didReceiveLocalNotification(localNotification: UILocalNotification, withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
