@@ -55,7 +55,14 @@
         <!--Dynamic Notification Interface Controller-->
         <scene sceneID="Yca-AC-NwS">
             <objects>
-                <controller id="srT-md-OMK"/>
+                <controller id="srT-md-OMK">
+                    <items>
+                        <label alignment="center" text="&lt;message&gt;" numberOfLines="0" id="20C-EA-Iyd">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <imageView alignment="center" image="cat01" contentMode="scaleAspectFill" id="k5g-ME-b2h"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="817" y="344"/>
         </scene>
