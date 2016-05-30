@@ -38,9 +38,12 @@
             <objects>
                 <notificationController id="Lhj-Q0-nyd">
                     <items>
-                        <label alignment="left" text="Alert Label" id="Fg2-aj-50Q"/>
+                        <label alignment="center" text="Alert Label" numberOfLines="0" id="Fg2-aj-50Q">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <imageView alignment="center" image="cat01" contentMode="scaleAspectFill" id="4ZD-co-nAC"/>
                     </items>
-                    <notificationCategory key="notificationCategory" id="dPK-zJ-eMf"/>
+                    <notificationCategory key="notificationCategory" identifier="Pawsome" id="dPK-zJ-eMf"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="Fg2-aj-50Q" id="eRM-21-JeC"/>
                     </connections>
