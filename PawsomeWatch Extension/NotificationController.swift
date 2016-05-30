@@ -36,6 +36,16 @@ class NotificationController: WKUserNotificationInterfaceController {
   func randomInt(min: Int, max: Int) -> Int {
     return min + Int(arc4random_uniform(UInt32(max - min + 1)))
   }
+  
+  func updateDisplayWithNotificationUserInfo(userInfo: [NSObject : AnyObject]) {
+    let catImageName = String(format: "cat%02d", arguments: [randomInt(1, max: 20)])
+    image.setImageNamed(catImageName)
+    if let aps = userInfo["aps"] as? NSDictionary,
+      let alert = aps["alert"] as? NSDictionary,
+      let body = alert["body"] as? String {
+        label.setText(body)
+    }
+  }
 
     /*
     override func didReceiveLocalNotification(localNotification: UILocalNotification, withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
