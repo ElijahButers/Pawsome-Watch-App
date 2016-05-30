@@ -33,6 +33,13 @@ class NotificationController: WKUserNotificationInterfaceController {
         super.didDeactivate()
     }
   
+  override func didReceiveRemoteNotification(remoteNotification: [NSObject : AnyObject], withCompletion completionHandler: (WKUserNotificationInterfaceType) -> Void) {
+    
+    updateDisplayWithNotificationUserInfo(remoteNotification)
+    
+    completionHandler(.Custom)
+  }
+  
   func randomInt(min: Int, max: Int) -> Int {
     return min + Int(arc4random_uniform(UInt32(max - min + 1)))
   }
