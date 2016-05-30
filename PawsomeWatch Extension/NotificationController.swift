@@ -11,6 +11,10 @@ import Foundation
 
 
 class NotificationController: WKUserNotificationInterfaceController {
+  
+  //Outlets
+  @IBOutlet var label: WKInterfaceLabel!
+  @IBOutlet var image: WKInterfaceImage!
 
     override init() {
         // Initialize variables here.
