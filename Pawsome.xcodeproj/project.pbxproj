@@ -84,6 +84,7 @@
 		4AF08C4B1B3F1B4A0062A0AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AF08C4D1B3F1B4A0062A0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AF08C591B3F1EC40062A0AB /* CatImageRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatImageRowController.swift; sourceTree = "<group>"; };
+		E2D7D2C21CFC35D800527503 /* PawsomeNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PawsomeNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +160,7 @@
 				4AF08C4B1B3F1B4A0062A0AB /* Assets.xcassets */,
 				4AF08C4D1B3F1B4A0062A0AB /* Info.plist */,
 				4AF08C431B3F1B4A0062A0AB /* Supporting Files */,
+				E2D7D2C21CFC35D800527503 /* PawsomeNotificationPayload.apns */,
 			);
 			path = "PawsomeWatch Extension";
 			sourceTree = "<group>";
